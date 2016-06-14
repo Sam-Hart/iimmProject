@@ -12,7 +12,7 @@ if(isset($_SESSION['user_id'])) {
 		<title>
 			User Login &amp; Registration
 		</title>
-		
+		<link rel="stylesheet" type="text/css" href="assets/styles.css" />
 	</head>
 	<body>
 		<form action="login.php" method="post" name="loginForm">

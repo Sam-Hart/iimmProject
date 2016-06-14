@@ -4,6 +4,7 @@
 		<title>
 			Successful Registration
 		</title>
+		<link rel="stylesheet" type="text/css" href="assets/styles.css" />
 	</head>
 	<body>
 		<h1>

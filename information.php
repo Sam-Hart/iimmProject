@@ -11,6 +11,7 @@ $user->GetUserData();
 		<title>
 			<?php echo($user->user_name);?>'s Information
 		</title>
+		<link rel="stylesheet" type="text/css" href="assets/styles.css" />
 	</head>
 	<body>
 		<h1>
@@ -30,6 +31,7 @@ $user->GetUserData();
 				<?php echo($user->user_favorite_film);?>
 			</i>
 		</p>
+		<?php if (sizeof($user->user_rated_films) > 0) {?>
 		<h3>
 			<?php echo($user->user_name);?>'s Rated Films
 		</h3>
@@ -46,7 +48,7 @@ $user->GetUserData();
 				?>
 			</ul>
 		</p>
-		
+		<?php }?>
 		
 		<a href="logout.php">Logout</a>
 	</body>

@@ -13,8 +13,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if($_POST['username'] != '' AND isset($_POST['username']) AND isset($_POST['password'])) {
 		$user->Login($_POST['username'], $_POST['password']);
 		if(isset($user->id)) {
-			#header('Location: '.$successfulURL);
-			#exit;
+			header('Location: '.$successfulURL);
+			exit;
 		} else {
 			header('Location: '.$unsuccessfulURL);
 		}
